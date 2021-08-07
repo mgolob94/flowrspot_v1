@@ -1,3 +1,13 @@
+p {
+  color: #949EA0;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: justified;
+}
+
 header {
   padding: 20px 0;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
@@ -100,4 +110,24 @@ header {
   font-size: 12px;
   line-height: 12px;
   color: #ffffff;
+}
+
+.flower-description {
+  margin-right: 100px;
+}
+.flower-description .row {
+  border-bottom: 1px solid #E8E9ED;
+}
+.flower-description__left {
+  margin-top: 100px;
+  color: #949EA0;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: justified;
+}
+.flower-description__right {
+  margin-top: 50px;
 }
