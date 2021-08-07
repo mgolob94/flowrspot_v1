@@ -1,0 +1,76 @@
+.flower-hero {
+    height: 350px;
+    background-size: cover !important;
+
+    &__image {
+        margin-top: 50px;
+    }
+
+    &__content,
+    &__add-button {
+        margin-bottom: 100px;
+    }
+
+    &__add-button {
+        background: linear-gradient(270deg, #ECBCB3 0%, #EAA79E 100%);
+        box-shadow: 0px 15px 20px rgba(234, 168, 159, 0.2);
+        border-radius: 3px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #ffffff;
+        padding: 18px 30px;
+        margin-right: 100px;
+        text-decoration: none;
+    }
+
+    .flower-title {
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 35px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    .flower-category {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 14px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    .flower-sightings {
+        margin-bottom: 20px;
+
+        &__icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            background: #ffffff;
+            margin-right: 18px;
+
+            img {
+                width: 13px;
+                height: 12px;
+            }
+        }
+
+        &__number {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            padding: 9px 15px;
+            font-size: 12px;
+            line-height: 12px;
+            color: #ffffff;
+        }
+    }
+}

@@ -18,6 +18,57 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <p>Testing</p>
+   <header>
+       <div class="container-fluid d-flex justify-content-between">
+           <div class="d-flex align-items-center">
+               <a href="/">
+                    <img src="../src/images/flowrspot-logo.svg">
+                </a>
+           </div>
+           <div class="d-flex">
+                <ul class="nav align-items-center justify-content-between">
+                    <li>
+                        <a href="/flowers">Flowers</a>
+                    </li>
+                    <li>
+                        <a href="/latest-sightings">Latest Sightings</a>
+                    </li>
+                    <li>
+                        <a href="/favorites">Favorites</a>
+                    </li>
+                </ul>
+                <a class="d-flex align-items-center profile-item" href="/profile">
+                    <span>John Doe</span>
+                    <img class="rounded-circle profile-item__image" src="../src/images/menu_profile_holder.png" alt="Profile">
+                </a>
+           </div>
+       </div>
+   </header>
+   <section class="flower-hero" style="background: url('../src/images/pl-hero.jpg') no-repeat">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="flower-hero__image">
+                        <img src="../src/images/pl-image.jpg" alt="Flower">
+                    </div>
+                </div>
+                <div class="col-md-8 d-flex align-items-end flex-row justify-content-between">
+                    <div class="flower-hero__content">
+                        <div class="flower-sightings d-flex flex-row">
+                            <div class="flower-sightings__icon d-flex align-items-center justify-content-center">
+                                <img src="../src/images/star@2x.png" alt="">
+                            </div>
+                            <div class="flower-sightings__number">
+                                127 sightings
+                            </div>
+                        </div>
+                        <h1 class="flower-title">Balloon Flower</h1>
+                        <p class="flower-category">Platycodon grandiflorus</p>
+                    </div>
+                    <a class="flower-hero__add-button" href="/">+ Add New Sighting</a>
+                </div>
+            </div>
+        </div>
+   </section>
 </body>
 </html>
