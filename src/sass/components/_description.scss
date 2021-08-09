@@ -1,8 +1,16 @@
 .flower-description {
-    margin-right: 100px;
-    
-    .row {
-        border-bottom: 1px solid #E8E9ED;
+    .col-md-9 {
+        padding-right: 100px;
+    }    
+    .container-fluid {
+        &::after {
+            position: absolute;
+            content: '';
+            border-bottom: 1px solid #E8E9ED;
+            height: 1px;
+            width: calc(100% - 40px);
+            left: 20px;
+        }
     }
 
     &__left {

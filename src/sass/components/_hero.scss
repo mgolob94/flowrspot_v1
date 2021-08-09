@@ -25,6 +25,10 @@
         padding: 18px 30px;
         margin-right: 100px;
         text-decoration: none;
+
+        &:hover {
+            color: #949EA0;
+        }
     }
 
     .flower-title {
@@ -58,9 +62,17 @@
             background: #ffffff;
             margin-right: 18px;
 
-            img {
+            svg {
                 width: 13px;
                 height: 12px;
+                color:#D4D8D9;
+                transition: 0.3s ease-in-out;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    color: #eaa79e;
+                }
             }
         }
 
@@ -71,6 +83,12 @@
             font-size: 12px;
             line-height: 12px;
             color: #ffffff;
+            transition: 0.3s ease-in-out;
+
+
+            &:hover {
+                color: #eaa79e;
+            }
         }
     }
 }

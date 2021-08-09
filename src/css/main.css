@@ -25,6 +25,10 @@ header {
   text-align: right;
   text-decoration: none;
   color: #949EA0;
+  transition: 0.3s ease-in-out;
+}
+.nav li a:hover {
+  color: #545858;
 }
 
 .profile-item {
@@ -70,6 +74,9 @@ header {
   margin-right: 100px;
   text-decoration: none;
 }
+.flower-hero__add-button:hover {
+  color: #949EA0;
+}
 .flower-hero .flower-title {
   font-size: 35px;
   font-style: normal;
@@ -99,9 +106,14 @@ header {
   background: #ffffff;
   margin-right: 18px;
 }
-.flower-hero .flower-sightings__icon img {
+.flower-hero .flower-sightings__icon svg {
   width: 13px;
   height: 12px;
+  color: #D4D8D9;
+  transition: 0.3s ease-in-out;
+}
+.flower-hero .flower-sightings__icon svg:hover, .flower-hero .flower-sightings__icon svg:active, .flower-hero .flower-sightings__icon svg:focus {
+  color: #eaa79e;
 }
 .flower-hero .flower-sightings__number {
   background: rgba(0, 0, 0, 0.2);
@@ -110,13 +122,22 @@ header {
   font-size: 12px;
   line-height: 12px;
   color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+.flower-hero .flower-sightings__number:hover {
+  color: #eaa79e;
 }
 
-.flower-description {
-  margin-right: 100px;
+.flower-description .col-md-9 {
+  padding-right: 100px;
 }
-.flower-description .row {
+.flower-description .container-fluid::after {
+  position: absolute;
+  content: "";
   border-bottom: 1px solid #E8E9ED;
+  height: 1px;
+  width: calc(100% - 40px);
+  left: 20px;
 }
 .flower-description__left {
   margin-top: 100px;
@@ -130,4 +151,98 @@ header {
 }
 .flower-description__right {
   margin-top: 50px;
+}
+
+.other-flowers {
+  margin-top: 50px;
+}
+.other-flowers__item {
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  margin-bottom: 41px;
+}
+.other-flowers__item .flower-header {
+  position: relative;
+}
+.other-flowers__item .flower-image {
+  width: 100%;
+}
+.other-flowers__item .flower-location {
+  position: absolute;
+  padding: 6px 13px;
+  background: #ffffff;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  top: 20px;
+  left: 20px;
+}
+.other-flowers__item .flower-location__icon {
+  width: 10px;
+  height: 13px;
+  margin-right: 10px;
+}
+.other-flowers__item .flower-location__name {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #DF9186;
+}
+.other-flowers__item .flower-content {
+  background: #ffffff;
+  padding: 20px;
+}
+.other-flowers__item .flower-content p {
+  margin-bottom: 0;
+}
+.other-flowers__item .flower-content .author-image {
+  margin-right: 15px;
+  height: 100%;
+}
+.other-flowers__item .flower-content .flower-author {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.other-flowers__item .flower-content .post-author {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #949EA0;
+}
+.other-flowers__item .flower-content__text {
+  border-bottom: 1px solid #E8E9ED;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: 24px;
+}
+.other-flowers__item .flower-content .post-comments,
+.other-flowers__item .flower-content .post-favorites {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0px;
+  text-align: justified;
+  color: #949EA0;
+}
+.other-flowers__item .flower-content .post-comments img,
+.other-flowers__item .flower-content .post-favorites img {
+  margin-right: 10px;
+}
+.other-flowers__item .flower-content .post-comments img {
+  height: 15px;
+  width: 16px;
+}
+.other-flowers__item .flower-content .post-favorites img {
+  height: 15px;
+  width: 18px;
 }
