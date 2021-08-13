@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowerspot</title>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
@@ -37,7 +39,7 @@
                         <a href="/favorites">Favorites</a>
                     </li>
                 </ul>
-                <a class="d-flex align-items-center profile-item" href="/profile">
+                <a class="d-flex align-items-center profile-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <span>John Doe</span>
                     <img class="rounded-circle profile-item__image" src="../src/images/menu_profile_holder.png" alt="Profile">
                 </a>
@@ -68,7 +70,7 @@
                         <h1 class="flower-title">Balloon Flower</h1>
                         <p class="flower-category">Platycodon grandiflorus</p>
                     </div>
-                    <a class="flower-hero__add-button" href="/">+ Add New Sighting</a>
+                    <a class="flower-hero__add-button btn" href="/">+ Add New Sighting</a>
                 </div>
             </div>
         </div>
@@ -250,6 +252,46 @@
            </div>
        </div>
    </section>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">  
+      <div class="modal-content"> 
+        <div class="d-flex justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="d-flex flex-row align-items-center profile-header">
+            <div>
+                <img src="../src/images/profile-holder.png" class="user-photo">
+            </div>
+            <div>
+                <h2 class="user-name">Michael Berry</h2>
+                <p class="user-sightings">47 sightings</p>
+            </div>
+
+          </div>
+          <div class="profile-details">
+              <label>First Name</label>
+              <p>Michael</p>
+
+              <label>Last Name</label>
+              <p>Berry</p>
+
+              <label>Date of Birth</label>
+              <p>May 20, 1980</p>
+
+              <label>Email Address</label>
+              <p>michael.berry@gmail.com</p>
+          </div>
+          <div class="d-flex justify-content-center logout-btn">
+            <button type="button" class="btn" data-bs-dismiss="modal">Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>

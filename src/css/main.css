@@ -8,6 +8,28 @@ p {
   text-align: justified;
 }
 
+.modal .modal-body {
+  padding: 60px 111px;
+}
+
+.btn {
+  background: linear-gradient(270deg, #ECBCB3 0%, #EAA79E 100%);
+  box-shadow: 0px 15px 20px rgba(234, 168, 159, 0.2);
+  border-radius: 3px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+  padding: 18px 30px;
+  text-decoration: none;
+}
+.btn:hover {
+  color: #949EA0;
+}
+
 header {
   padding: 20px 0;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
@@ -33,6 +55,7 @@ header {
 
 .profile-item {
   text-decoration: none;
+  cursor: pointer;
 }
 .profile-item span {
   font-size: 14px;
@@ -60,22 +83,7 @@ header {
   margin-bottom: 100px;
 }
 .flower-hero__add-button {
-  background: linear-gradient(270deg, #ECBCB3 0%, #EAA79E 100%);
-  box-shadow: 0px 15px 20px rgba(234, 168, 159, 0.2);
-  border-radius: 3px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 14px;
-  letter-spacing: 0px;
-  text-align: center;
-  color: #ffffff;
-  padding: 18px 30px;
   margin-right: 100px;
-  text-decoration: none;
-}
-.flower-hero__add-button:hover {
-  color: #949EA0;
 }
 .flower-hero .flower-title {
   font-size: 35px;
@@ -245,4 +253,72 @@ header {
 .other-flowers__item .flower-content .post-favorites img {
   height: 15px;
   width: 18px;
+}
+
+.profile-header {
+  margin-bottom: 41px;
+}
+
+.user-photo {
+  width: 80px;
+  height: 80px;
+  margin-right: 30px;
+}
+
+.user-name {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.user-sightings {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #949EA0;
+  margin: 0;
+}
+
+.profile-details label {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 16px;
+  color: #949EA0;
+}
+.profile-details p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 31px;
+  color: #334144;
+}
+
+.modal-dialog {
+  max-width: 600px;
+  position: relative;
+}
+
+.btn-close {
+  margin-top: 19px;
+  margin-right: 19px;
+}
+.btn-close:hover, .btn-close:active, .btn-close:focus {
+  box-shadow: none;
+}
+
+.logout-btn {
+  margin-top: 71px;
 }
