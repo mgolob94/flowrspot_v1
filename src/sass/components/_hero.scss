@@ -1,18 +1,44 @@
 .flower-hero {
     height: 350px;
     background-size: cover !important;
+    z-index: 10;
+    position: relative;
+
+    @media(max-width: 767px) {
+        background: url('../images/pl-image_2.jpeg') !important;
+        background-size: cover !important;
+    }
+
+    .row,
+    .container-fluid {
+        @media(max-width: 767px) {
+            height: 100%;
+        }
+    }
 
     &__image {
         margin-top: 50px;
+
+        @media(max-width: 767px) {
+            display: none;
+        }
     }
 
     &__content,
     &__add-button {
-        margin-bottom: 100px;
+        @media(min-width: 768px) {
+            margin-bottom: 100px;
+        }
     }
 
     &__add-button {
-        margin-right: 100px;
+        @media(min-width: 768px) {
+            margin-right: 100px;
+        }
+
+        @media(max-width: 767px) {
+            margin-bottom: -25px;
+        }
     }
 
     .flower-title {
@@ -55,7 +81,7 @@
                 &:hover,
                 &:active,
                 &:focus {
-                    color: #eaa79e;
+                    color: $blush;
                 }
             }
         }
@@ -71,7 +97,7 @@
 
 
             &:hover {
-                color: #eaa79e;
+                color: $blush;
             }
         }
     }

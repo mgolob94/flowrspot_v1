@@ -1,6 +1,9 @@
 .flower-description {
     .col-md-9 {
-        padding-right: 100px;
+
+        @media(min-width: 768px){
+            padding-right: 100px;
+        }
     }    
     .container-fluid {
         &::after {
