@@ -8,6 +8,11 @@ p {
   text-align: justified;
 }
 
+.container-fluid {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 header {
   padding: 20px 0;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
@@ -114,6 +119,7 @@ header {
 
 .flower-description {
   margin-right: 100px;
+  margin-left: 20px;
 }
 .flower-description .row {
   border-bottom: 1px solid #E8E9ED;
@@ -130,4 +136,14 @@ header {
 }
 .flower-description__right {
   margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.other-flowers {
+  margin-top: 50px;
+}
+.other-flowers__item {
+  background: #FFFFFF;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
 }

@@ -1,6 +1,7 @@
 .flower-description {
     margin-right: 100px;
-    
+    margin-left: 20px;
+
     .row {
         border-bottom: 1px solid #E8E9ED;
     }
@@ -18,5 +19,6 @@
     
     &__right {
         margin-top: 50px;
+        margin-bottom: 30px;
     }
 }
